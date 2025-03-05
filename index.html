@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>OBR Concept</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class="navbar">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#learning">Learning</a></li>
+                <li><a href="#statement">Mission statement</a></li>
+                <li><a href="#links">Useful links</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Simulation data</h1>
+        <div class="column">
+        <div class="container">
+            <a href="https://docs.google.com/spreadsheets/d/1x940bpxyG0QRENBWUz8fFLCN_-sHahTk9S31a4QRsuU/edit?usp=drive_web&ouid=112346617458188363917">
+            <div class="box">
+                <h3>Nose cone</h3>
+                <p>All nose cone development data. This is a high priority project, deadline: end of March.</p>
+            </div>
+            </a>
+
+            <a href="https://docs.google.com/spreadsheets/d/1vAhL71Jk6fLhizFgeg7ZEQExDxxlRj1FkNgPWzDxfGc/edit?gid=0#gid=0">
+                <div class="box">
+                    <h3>Aero Panels</h3>
+                    <p>Aero panels will serve to smoothen the chassis geometry to improve the flow characteristics downstream </p>
+                </div>
+                </a>
+
+            <a href="https://docs.google.com/spreadsheets/d/12VuL_f1X32sZgbNKj2jlaalENGvyq_1x4656H__J5dw/edit?gid=0#gid=0">
+                <div class="box">
+                    <h3>Side Wings / Keel</h3>
+                    <p>By taking air downstream of the front wing and compressing it to create low pressure, the car achieves higher downforce. </p>
+                </div>
+                </a>
+
+            <a href="https://docs.google.com/spreadsheets/d/1uEcBKAMxG33DAOLHkNsldb6Ge8WDmhtRC1fmfwp1e8E/edit?gid=0#gid=0">
+                <div class="box">
+                    <h3>Roll hoop cover</h3>
+                    <p>As a result of the driver, roll hoop and the peripherals that exist in this location it could be beneficial to cover this area with a surface.</p>
+                </div>
+                </a>
+            <a href="https://docs.google.com/spreadsheets/d/1EO9MVfvarcqh-DVm5m9RGTz00NJI_kDIRh-Dkr2K7Sg/edit?gid=0#gid=0">
+                <div class="box">
+                    <h3>Rear Wing</h3>
+                    <p>The aim here is to look into the flap profiles (NOT the main plane) in order to improve their performance in straight and pitch.</p>
+                </div>
+                </a>
+                
+        </div>
+        </div>
+
+        <h1>Slides</h1>
+        <div class="column">
+        <div class="container">
+            <a href="https://docs.google.com/spreadsheets/d/1x940bpxyG0QRENBWUz8fFLCN_-sHahTk9S31a4QRsuU/edit?usp=drive_web&ouid=112346617458188363917">
+            <div class="box">
+                <h3>Nose cone</h3>
+                <p>All nose cone development data. This is a high priority project, deadline: end of March.</p>
+            </div>
+            </a>
+
+            <a href="https://docs.google.com/presentation/d/1v4uDh7DwNW16-gX3tOj_6CwegNbsWmAGWm-gDghkp-E/edit#slide=id.g30af6bb5267_0_63">
+                <div class="box">
+                    <h3>Aero Panels</h3>
+                    <p>Aero panels will serve to smoothen the chassis geometry to improve the flow characteristics downstream </p>
+                </div>
+                </a>
+
+            <a href="https://docs.google.com/presentation/d/1pxZDkQmfoc2nRpudYfXhyfYMSiYYr_XAs5EsxB8CcVo/edit#slide=id.g30af6bb5267_0_63">
+                <div class="box">
+                    <h3>Side Wings / Keel</h3>
+                    <p>By taking air downstream of the front wing and compressing it to create low pressure, the car achieves higher downforce. </p>
+                </div>
+                </a>
+
+            <a href="https://docs.google.com/presentation/d/1NwbAqXOMDhAGcvXbP9N6vsCd-g82Kjjqfh8vXtCArnw/edit#slide=id.g30af6bb5267_0_63">
+                <div class="box">
+                    <h3>Roll hoop cover</h3>
+                    <p>As a result of the driver, roll hoop and the peripherals that exist in this location it could be beneficial to cover this area with a surface.</p>
+                </div>
+                </a>
+            <a href="https://docs.google.com/presentation/d/1x-itHlaeDWYaIl7_YesDkspIMlOVk773avvdzemvqXI/edit#slide=id.g30af6bb5267_0_63">
+                <div class="box">
+                    <h3>Rear Wing</h3>
+                    <p>The aim here is to look into the flap profiles (NOT the main plane) in order to improve their performance in straight and pitch.</p>
+                </div>
+                </a>
+
+        </div>
+        </div>
+
+        
+    <section class = "CFD">
+        <h1>CFD Templates</h1>
+        <h3 id="CFDsubtext">Use this section to get instant links for CFD templates for all scenarios and radiator/fan configurations</h3>
+        <!-- Selection Bar -->
+        <div class="selection-bar">
+            <button class="selection-item active" data-category="straight-line">Straight Line</button>
+            <button class="selection-item" data-category="pitch">Pitch</button>
+            <button class="selection-item" data-category="crosswind">Crosswind</button>
+        </div>
+
+        <!-- Category Containers -->
+        <div class="category-container" id="straight-line">
+            <div class="boxc" id="V11">
+                <h3 class="title">V11</h3>
+                <p>The standard go-to CFD template, without a radiator region.</p>
+            </div>
+            <div class="boxc" id="V11R">
+                <h3 class="title">V11R</h3>
+                <p>CFD template with a porous region for the radiator.</p>
+            </div>
+            <div class="boxc" id="V11X">
+                <h3 class="title">V11X</h3>
+                <p>Advanced CFD template using URANS turbulence model.</p>
+            </div>
+        </div>
+
+        <div class="category-container" id="pitch" style="display: none;">
+            <div class="boxc" id="V11">
+                <h3 class="title">V11 (Pitch)</h3>
+                <p>Standard pitch template, with pitch angle of 1.8 deg</p>
+            </div>
+            <div class="boxc" id="V11R">
+                <h3 class="title">V11R (Pitch)</h3>
+                <p>Pitch template with radiators. Currently unavailable</p>
+            </div>
+        </div>
+
+        <div class="category-container" id="crosswind" style="display: none;">
+            <div class="boxc" id="V11">
+                <h3 class="title">V11 (Crosswind)</h3>
+                <p>Crosswind template for people running without radiators.</p>
+            </div>
+            <div class="boxc" id="V11R">
+                <h3 class="title">V11R (Crosswind)</h3>
+                <p>Crosswind template with a radiator region, 10 deg yaw.</p>
+            </div>
+            <div class="boxc" id="V11X">
+                <h3 class="title">Curved domain</h3>
+                <p>Advanced template for simulating yaw, rotating the car around a circular domain.</p>
+            </div>
+        </div>
+    </section>
+    </main>
+    
+    <footer>
+        <p>&copy; 2025 Patryk Dubaniewicz. All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
