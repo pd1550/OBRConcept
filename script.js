@@ -1,4 +1,11 @@
 document.addEventListener("DOMContentLoaded", () => {
+
+    const mobileMenu = document.getElementById("mobile-menu");
+    const navList = document.querySelector(".nav-list");
+
+    mobileMenu.addEventListener("click", function () {
+        navList.classList.toggle("active");
+    });
     const selectionItems = document.querySelectorAll(".selection-item");
     const categoryContainers = document.querySelectorAll(".category-container");
 

@@ -6,157 +6,298 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>OBR Concept</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
+    <script>
+        document.addEventListener("scroll", function() {
+            const images = ["c1.jpg", "c2.jpg", "c3.jpg", "c4.jpg", "c6.jpg", "c7.jpg", "c8.jpg", "c9.jpg", "c10.jpg", "c5.jpg",];
+            const index = Math.min(Math.floor((window.scrollY-1650) / 60), images.length - 1);
+            document.getElementById("scrolling-image").src = images[index];
+        });
+
+        document.querySelectorAll('.scroll-link').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href').substring(1);
+                const targetElement = document.getElementById(targetId);
+                targetElement.scrollIntoView({ behavior: 'smooth' });
+            });
+        });
+    </script>
 </head>
 <body>
     <header>
-        <nav>
-            <ul class="navbar">
-                <li><a href="#home">Home</a></li>
+        <nav class="navbar">
+            <div class="logo">
+                <img src="logo.jpg" alt="Oxford Brookes Aerodynamics Logo">
+            </div>
+            <div class="menu-toggle" id="mobile-menu">
+                <span class="bar greyc"></span>
+                <span class="bar bluec"></span>
+                <span class="bar pinkc"></span>
+            </div>
+            <ul class="nav-list">
+                <li><a href="https://obr.brookes.ac.uk/obr-home" target="_blank">OBR</a></li>
+                <li><a href="#CFD" class="scroll-link">Templates</a></li>
+                <li><a href="#cad" class="scroll-link">CAD</a></li>
                 <li><a href="#learning">Learning</a></li>
-                <li><a href="#statement">Mission statement</a></li>
-                <li><a href="#links">Useful links</a></li>
             </ul>
         </nav>
     </header>
+    <div class="hero">
+        <div class="container2">
+            <div class="content">
+                <h1 class="pagetitle">Welcome to Oxford Brookes Racing Aerodynamics.</h1>
+                <div class="buttons">
+                    <a href="https://www.instagram.com" target="_blank" class="btn red">Aero Insta</a>
+                    <a href="https://drive.google.com/drive/folders/10tZ1o2KzgBsBDeb7kr9J98J_BwNjE-X-?usp=drive_link" target="_blank" class="btn blue">Google Drive</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+    <div class="mission-statement">
+        <h2 class="thin-text">Mission Statement</h2>
+        <p>To develop <span class="blue">versatile graduates</span> able to excel in a high-performance team</p>
+        <p>To build a <span class="pink">multi-year legacy</span> as a competitive, high-quality team</p>
+    </div>
+
     <main>
-        <h1>Simulation data</h1>
+        <section>
+        <h1 class="sectiontitle">Concept team data & slides</h1>
+        <h3 class="sectionsubtitle">Here you can find links to google drive for all data sheets and slides with CFD images. Remember, you need to be logged in on your Brookes account to view.</h3>
         <div class="column">
         <div class="container">
-            <a href="https://docs.google.com/spreadsheets/d/1x940bpxyG0QRENBWUz8fFLCN_-sHahTk9S31a4QRsuU/edit?usp=drive_web&ouid=112346617458188363917">
+            <a target="_blank" href='https://drive.google.com/drive/folders/1hwR68CxGObYJA4V23U7TNDta4QAIe0JR?usp=drive_link'>
             <div class="box">
                 <h3>Nose cone</h3>
                 <p>All nose cone development data. This is a high priority project, deadline: end of March.</p>
+                <div class="'boxbuttons">
+                    <a target="_blank" href="https://docs.google.com/spreadsheets/d/1x940bpxyG0QRENBWUz8fFLCN_-sHahTk9S31a4QRsuU/edit?usp=drive_web&ouid=112346617458188363917" target="_blank" class="btnc green">Data</a>
+                    <a target="_blank" href="https://docs.google.com/presentation/d/1oBgo3MOVRk87x5odItF2qASqfawZD8fZT0zBd_0guDA/edit#slide=id.g30af6bb5267_0_63" target="_blank" class="btnc yellow">Slides</a>
+                </div>
             </div>
             </a>
 
-            <a href="https://docs.google.com/spreadsheets/d/1vAhL71Jk6fLhizFgeg7ZEQExDxxlRj1FkNgPWzDxfGc/edit?gid=0#gid=0">
+            <a target="_blank" href='https://drive.google.com/drive/folders/1k-KvGyhzoyXTkMV19GZ4akpo-YSCSFzl?usp=drive_link'>
                 <div class="box">
                     <h3>Aero Panels</h3>
                     <p>Aero panels will serve to smoothen the chassis geometry to improve the flow characteristics downstream </p>
+                    <div class="'boxbuttons">
+                        <a href="https://docs.google.com/spreadsheets/d/1vAhL71Jk6fLhizFgeg7ZEQExDxxlRj1FkNgPWzDxfGc/edit?gid=0#gid=0" target="_blank" class="btnc green">Data</a>
+                        <a href="https://docs.google.com/presentation/d/1v4uDh7DwNW16-gX3tOj_6CwegNbsWmAGWm-gDghkp-E/edit#slide=id.g30af6bb5267_0_63" target="_blank" class="btnc yellow">Slides</a>
+                    </div>
                 </div>
                 </a>
 
-            <a href="https://docs.google.com/spreadsheets/d/12VuL_f1X32sZgbNKj2jlaalENGvyq_1x4656H__J5dw/edit?gid=0#gid=0">
+            <a target="_blank" href='https://drive.google.com/drive/folders/1XhIsUI-yYAJRlQ47hAuXLRGyrw6CDH0j?usp=drive_link'>
                 <div class="box">
                     <h3>Side Wings / Keel</h3>
                     <p>By taking air downstream of the front wing and compressing it to create low pressure, the car achieves higher downforce. </p>
+                    <div class="'boxbuttons">
+                        <a href="https://docs.google.com/spreadsheets/d/12VuL_f1X32sZgbNKj2jlaalENGvyq_1x4656H__J5dw/edit?gid=0#gid=0" target="_blank" class="btnc green">Data</a>
+                        <a href="https://docs.google.com/presentation/d/1pxZDkQmfoc2nRpudYfXhyfYMSiYYr_XAs5EsxB8CcVo/edit#slide=id.g30af6bb5267_0_63" target="_blank" class="btnc yellow">Slides</a>
+                    </div>
                 </div>
                 </a>
 
-            <a href="https://docs.google.com/spreadsheets/d/1uEcBKAMxG33DAOLHkNsldb6Ge8WDmhtRC1fmfwp1e8E/edit?gid=0#gid=0">
+            <a target="_blank" href='https://drive.google.com/drive/folders/1iCrT0C2Ux9a0wdEG9lYLBx09as0sBiTW?usp=drive_link'>
                 <div class="box">
                     <h3>Roll hoop cover</h3>
                     <p>As a result of the driver, roll hoop and the peripherals that exist in this location it could be beneficial to cover this area with a surface.</p>
+                    <div class="'boxbuttons">
+                        <a href="https://docs.google.com/spreadsheets/d/1uEcBKAMxG33DAOLHkNsldb6Ge8WDmhtRC1fmfwp1e8E/edit?gid=0#gid=0" target="_blank" class="btnc green">Data</a>
+                        <a href="https://docs.google.com/presentation/d/1NwbAqXOMDhAGcvXbP9N6vsCd-g82Kjjqfh8vXtCArnw/edit#slide=id.g30af6bb5267_0_63" target="_blank" class="btnc yellow">Slides</a>
+                    </div>
                 </div>
                 </a>
-            <a href="https://docs.google.com/spreadsheets/d/1EO9MVfvarcqh-DVm5m9RGTz00NJI_kDIRh-Dkr2K7Sg/edit?gid=0#gid=0">
+            <a target="_blank" href='https://drive.google.com/drive/folders/1QNgX4LwkABbRHc2-GDP90N92HqSx7pjg?usp=drive_link'>
                 <div class="box">
                     <h3>Rear Wing</h3>
                     <p>The aim here is to look into the flap profiles (NOT the main plane) in order to improve their performance in straight and pitch.</p>
-                </div>
+                    <div class="'boxbuttons">
+                        <a href="https://docs.google.com/spreadsheets/d/1EO9MVfvarcqh-DVm5m9RGTz00NJI_kDIRh-Dkr2K7Sg/edit?gid=0#gid=0" target="_blank" class="btnc green">Data</a>
+                        <a href="https://docs.google.com/presentation/d/1x-itHlaeDWYaIl7_YesDkspIMlOVk773avvdzemvqXI/edit#slide=id.g30af6bb5267_0_63" target="_blank" class="btnc yellow">Slides</a>
+                    </div></div>
                 </a>
                 
         </div>
         </div>
-
-        <h1>Slides</h1>
-        <div class="column">
-        <div class="container">
-            <a href="https://docs.google.com/spreadsheets/d/1x940bpxyG0QRENBWUz8fFLCN_-sHahTk9S31a4QRsuU/edit?usp=drive_web&ouid=112346617458188363917">
-            <div class="box">
-                <h3>Nose cone</h3>
-                <p>All nose cone development data. This is a high priority project, deadline: end of March.</p>
+        </section>
+        <div class="team-goals">
+            <h1 class="sectiontitle">Gallery</h1>
+            <h3 class="sectionsubtitle">Find more images like this + cool CFD renders on our new Aero Instagram (coming soon)</h3>
+            <div class="goals-content">
+                <img src="car1.jpg" alt="Team Car 1" class="goal-image">
+                <img src="car2.png" alt="Team Car 2" class="goal-image">
+                <img src="car3.png" alt="Team Car 3" class="goal-image">
             </div>
-            </a>
-
-            <a href="https://docs.google.com/presentation/d/1v4uDh7DwNW16-gX3tOj_6CwegNbsWmAGWm-gDghkp-E/edit#slide=id.g30af6bb5267_0_63">
-                <div class="box">
-                    <h3>Aero Panels</h3>
-                    <p>Aero panels will serve to smoothen the chassis geometry to improve the flow characteristics downstream </p>
-                </div>
-                </a>
-
-            <a href="https://docs.google.com/presentation/d/1pxZDkQmfoc2nRpudYfXhyfYMSiYYr_XAs5EsxB8CcVo/edit#slide=id.g30af6bb5267_0_63">
-                <div class="box">
-                    <h3>Side Wings / Keel</h3>
-                    <p>By taking air downstream of the front wing and compressing it to create low pressure, the car achieves higher downforce. </p>
-                </div>
-                </a>
-
-            <a href="https://docs.google.com/presentation/d/1NwbAqXOMDhAGcvXbP9N6vsCd-g82Kjjqfh8vXtCArnw/edit#slide=id.g30af6bb5267_0_63">
-                <div class="box">
-                    <h3>Roll hoop cover</h3>
-                    <p>As a result of the driver, roll hoop and the peripherals that exist in this location it could be beneficial to cover this area with a surface.</p>
-                </div>
-                </a>
-            <a href="https://docs.google.com/presentation/d/1x-itHlaeDWYaIl7_YesDkspIMlOVk773avvdzemvqXI/edit#slide=id.g30af6bb5267_0_63">
-                <div class="box">
-                    <h3>Rear Wing</h3>
-                    <p>The aim here is to look into the flap profiles (NOT the main plane) in order to improve their performance in straight and pitch.</p>
-                </div>
-                </a>
-
         </div>
         </div>
+        </div>
+
 
         
-    <section class = "CFD">
-        <h1>CFD Templates</h1>
-        <h3 id="CFDsubtext">Use this section to get instant links for CFD templates for all scenarios and radiator/fan configurations</h3>
+    <section class = "CFD" id="CFD">
+        <h1 class="sectiontitle">CFD Templates</h1>
+        <h3 class="sectionsubtitle"> Use this section to get instant links for CFD templates for all scenarios and radiator/fan configurations</h3>
         <!-- Selection Bar -->
         <div class="selection-bar">
-            <button class="selection-item active" data-category="straight-line">Straight Line</button>
+            <button class="selection-item active" data-category="concept">Concept</button>
+            <button class="selection-item" data-category="straight-line">Straight Line</button>
             <button class="selection-item" data-category="pitch">Pitch</button>
-            <button class="selection-item" data-category="crosswind">Crosswind</button>
+            <button class="selection-item" data-category="crosswind">Yaw</button>
+            <button class="selection-item" data-category="cooling">Cooling</button>
         </div>
 
         <!-- Category Containers -->
-        <div class="category-container" id="straight-line">
-            <div class="boxc" id="V11">
+        <div class="category-container" id="concept">
+            <a href='https://drive.google.com/file/d/1-d1NkMq27Zf1SdNhpRgXfkKQxTUSHLrQ/view?usp=drive_link'><div class="boxc" id="V11">
                 <h3 class="title">V11</h3>
-                <p>The standard go-to CFD template, without a radiator region.</p>
-            </div>
-            <div class="boxc" id="V11R">
-                <h3 class="title">V11R</h3>
-                <p>CFD template with a porous region for the radiator.</p>
-            </div>
-            <div class="boxc" id="V11X">
+                <p>Baseline CFD template with no radiator region</p>
+            </div></a>
+            <a href=''><div class="boxc" id="V11R">
+                <h4 class="title" >V11R</h4>
+                <p>V11, but with a porous radiator region and a fan boundary</p>
+            </div></a>
+            <a href=''><div class="boxc" id="V11X">
                 <h3 class="title">V11X</h3>
-                <p>Advanced CFD template using URANS turbulence model.</p>
-            </div>
-        </div>
+                <p>Advanced CFD template using URANS turbulence model</p>
+            </div></a>
+        </div>  
+
+        <div class="category-container" id="straight-line">
+            <a href='https://drive.google.com/file/d/10H8Cz46B0pBOWltiom5YCeNeH5qNVNWS/view?usp=drive_link'><div class="boxc" id="V11">
+                <h3 class="title">V11</h3>
+                <p>The standard go-to CFD half car template</p>
+            </div></a>
+            <a href='https://drive.google.com/file/d/1vPEvEZCGTB6SHgx-RUiXWC0y5Z0SqaU7/view?usp=drive_link'><div class="boxc" id="V11R">
+                <h4 class="title" style="font-size: 24px; margin-bottom: 20px;">V11 (Aero Maps)</h4>
+                <p>V11, but without the car. Designed for aero maps.</p>
+            </div></a>
+            <a href='https://drive.google.com/file/d/1_YNzfkwraYncqKuY5L6g4e3ZDv28zJ-G/view?usp=drive_link'><div class="boxc" id="V11X">
+                <h3 class="title">V10.6</h3>
+                <p>Previous baseline template, only for Star 2023.</p>
+            </div></a>
+        </div>  
 
         <div class="category-container" id="pitch" style="display: none;">
-            <div class="boxc" id="V11">
-                <h3 class="title">V11 (Pitch)</h3>
+            <a href='https://drive.google.com/file/d/1uGllaHfxBBJXxqxDnkYU7jGv2m7QEUAe/view?usp=drive_link'><div class="boxc" id="V11">
+                <h3 class="title">V4 (Pitch)</h3>
                 <p>Standard pitch template, with pitch angle of 1.8 deg</p>
-            </div>
-            <div class="boxc" id="V11R">
-                <h3 class="title">V11R (Pitch)</h3>
-                <p>Pitch template with radiators. Currently unavailable</p>
-            </div>
+            </div></a>
+            <a href='https://drive.google.com/file/d/12-HQvnTgkb9KmCV9sjyla8TTZI7be7BM/view?usp=drive_link'><div class="boxc" id="V11R">
+                <h3 class="title">Simplified</h3>
+                <p>Old pitch template, for front wing development only</p>
+            </div></a>
         </div>
 
         <div class="category-container" id="crosswind" style="display: none;">
-            <div class="boxc" id="V11">
-                <h3 class="title">V11 (Crosswind)</h3>
-                <p>Crosswind template for people running without radiators.</p>
-            </div>
-            <div class="boxc" id="V11R">
-                <h3 class="title">V11R (Crosswind)</h3>
-                <p>Crosswind template with a radiator region, 10 deg yaw.</p>
-            </div>
-            <div class="boxc" id="V11X">
+            <a href='https://drive.google.com/file/d/1yuaVtJYeWFk6556RUn7H1J7KzxoidT8Z/view?usp=drive_link'><div class="boxc" id="V11">
+                <h3 class="title">V1 (Crosswind)</h3>
+                <p>Standard 5 deg yaw half car crosswind template (with option for full car)</p>
+            </div></a>
+            <a href='https://drive.google.com/drive/folders/1FWwILNQ0gim-QOq0jkla9ajEWPcEHQ9D?usp=drive_link'><div class="boxc" id="V11X">
                 <h3 class="title">Curved domain</h3>
                 <p>Advanced template for simulating yaw, rotating the car around a circular domain.</p>
+            </div></a>
+        </div>  
+        <div class="category-container" id="cooling" style="display: none;">
+            <a href='https://drive.google.com/file/d/1yuaVtJYeWFk6556RUn7H1J7KzxoidT8Z/view?usp=drive_link'><div class="boxc" id="V11">
+                <h3 class="title" style="font-size: 24px;">Standard</h3>
+                <p>The original front motor cooling macro template</p>
+            </div></a>
+            <a href='https://drive.google.com/drive/folders/1FWwILNQ0gim-QOq0jkla9ajEWPcEHQ9D?usp=drive_link'><div class="boxc" id="V11X">
+                <h3 class="title" style="font-size: 24px;">Front Wing</h3>
+                <p>New macro template, which includes the OBR25 front wing</p>
+            </div></a>
+        </div>  
+    </section>
+
+    <div class="cad" id="cad">
+        <h1 class="sectiontitle">CAD Geometry</h1>
+        <h3 class="sectionsubtitle">Here you can find link to all the importand CAD geometries for aero development</h3>
+        <div class="scroll-section">
+            <div class="text-content">
+                <div class="text-content2 boxd50"><img src="c1.jpg" id="scrolling-image" alt="Changing Image", width="100%"></div>
+                <div class="text-content2">
+                <a href='https://drive.google.com/file/d/1gkBnxqHlxX2Czj-14oR5rS73xBtWN93h/view?usp=drive_link'><div class="boxd" id="V11C">
+                    <h3 class="title">OBR26 Baseline CAD</h3>
+                    <p>Baseline CAD for OBR26 development - OBR26 chassis with 2025 aero package.</p>
+                </div></a>
+                <a href='https://drive.google.com/drive/folders/11xPCluuGPWRt2xyEs1uBvUCtGpakLv-C?usp=drive_link'><div class="boxd" id="V11C">
+                    <h3 class="title">OBR25 CAD Geometry</h3>
+                    <p>Folder with all the Aero Map configurations for OBR25</p>
+                </div></a>
+                <a href=''><div class="boxd" id="V11C">
+                    <h3 class="title">Newest duct iteration</h3>
+                    <p>Newest version of the front cooling duct and heat sink</p>
+                </div></a>
+                <a href=''><div class="boxd" id="V11C">
+                    <h3 class="title">OBR25 Front Wing</h3>
+                    <p>Brand new OBR Front Wing designed for the 2025 season</p>
+                </div></a>
+                <a href=''><div class="boxd" id="V11C">
+                    <h3 class="title">OBR25 Side Wing</h3>
+                    <p>2025 Side Wing Geometry</p>
+                </div></a>
+                <a href=''><div class="boxd" id="V11C">
+                    <h3 class="title">OBR25 Rear Wing</h3>
+                    <p>New Rear Wing CAD Geometry</p>
+                </div></a>
+                </div>
+            </div>
+    </div>
+    
+    </main>
+    <section style="margin: 10px;" id="learning">
+        <h1 class="sectiontitle">Learning & Other Links</h1>
+        <h3 class="sectionsubtitle">All the important learning materials + other documents, google drive folders etc.</h3>
+        <div class="container">
+            <div class="container">
+            <div class="boxl">
+                    <h3>V11 Tutorial</h3>
+            </div>
+            <div class="boxl">
+                <h3>Radiator setup tutorial</h3>
+            </div>
+            <div class="boxl">
+                <h3>CAD learning materials</h3>
+            </div>
+            <div class="boxl">
+                <h3>FW Document</h3>
+            </div>
+            <div class="boxl">
+                <h3>Team Meeting Slides</h3>
             </div>
         </div>
     </section>
-    </main>
-    
-    <footer>
-        <p>&copy; 2025 Patryk Dubaniewicz. All rights reserved.</p>
-    </footer>
+    <h1 class="sectiontitle" style="margin: 0px 20px;">STAR CCM Macros</h1>
+    <div class="hero2">
+        <div class="container2">
+            <div class="content3 container">
+                <div class="boxm">
+                    <h3>Aero Maps</h3>
+                    <p>A Google Drive folder with all the macros used for aero maps</p>
+            </div>
+            <div class="boxm">
+                <h3>Post processing</h3>
+                <p>This macro will output important post processing scenes, 2D and 3D + a .csv file with reuslts</p>
+            </div>
+            <div class="boxm">
+                <h3>Results (concept)</h3>
+                <p>This macro will return a .csv file with all the results for OBR26 concept team</p>
+            </div>
+            <div class="boxm">
+                <h3>Results (V10.6)</h3>
+                <p>Results macro for V10.6 template.</p>
+            </div>
+            <div class="boxm">
+                <h3>MATLAB tools</h3>
+                <p>All the important tools for Aero Maps MATLAB interpolation</p>
+            </div>
+        </div>
+    </div>
     <script src="script.js"></script>
 </body>
 </html>
